@@ -8,4 +8,4 @@
 
 3) Landing Zero for the template: https://www.bootstrapzero.com/bootstrap-template/landing-zero-free-bootstrap-theme
 
-4) Looking4Group.de and Looking4Group.eu - I intend to infringe no trademarks, or copyrights, used without permission of their name "Looking 4 Group" (Will update when/if permission is granted and will remove if permission is denied)
+4) Looking4Group.de / Looking4Group.eu - permission granted for using their names.
