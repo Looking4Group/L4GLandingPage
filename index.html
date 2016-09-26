@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Looking 4 Group Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <script>
+    $( document ).ready(function() {
+        document.getElementById('video-background').addEventListener('loadedmetadata', function() 
+        {
+            this.currentTime = 2.4;
+        }, false);
+    } );
+    </script>
+
+    <body>
+        <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="http://www.looking4group.eu/"><i class="ion-ios-analytics-outline"></i>Looking 4 Group</a>
+                </div>
+                <div class="navbar-collapse collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="page-scroll" href="http://looking4group.eu/hellfire/register.php">Sign Up (English)</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="http://looking4group.eu/hellfire/index.php">Forums (English)</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="http://looking4group.de/quelthalas/portal/?page_id=27">Sign Up (German)</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="http://looking4group.eu/quelthalas/forum/">Forums (German)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <header id="first">
+            <div class="header-content">
+                <div class="inner">
+                    <h1 class="L4G-Big-Text">Looking 4 Group</h1>
+                    <h4>The Burning Crusade, as it's meant to be.</h4>
+                    <hr>
+                    <a href="http://looking4group.eu/hellfire/portal.php" class="btn btn-primary btn-xl page-scroll">Hellfire Progressive 2.0</a> &nbsp; 
+                    <a href="http://looking4group.de/quelthalas/portal/" class="btn btn-primary btn-xl page-scroll">Quel'Thanas DE 2.4.3</a>
+                </div>
+            </div>
+            <video autoplay="" muted loop="" class="fillWidth fadeIn wow collapse in" id="video-background">
+                <source src="hellfire.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+        </header>
+
+
+    </body>
+</html>
