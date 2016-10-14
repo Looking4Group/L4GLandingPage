@@ -22,9 +22,11 @@
     function sound() {
        if (document.getElementById('video-background').muted == false) {
            document.getElementById('video-background').muted = true;
+           document.getElementById("sound").className = "fa fa-volume-off fa-2x";
        }
        else {
            document.getElementById('video-background').muted = false;
+           document.getElementById("sound").className = "fa fa-volume-up fa-2x";
        }
     }
     </script>
@@ -39,7 +41,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="http://www.looking4group.eu/"><i class="ion-ios-analytics-outline"></i>Looking 4 Group</a>
+                    <a class="navbar-brand page-scroll" href="http://www.looking4group.eu/"><i class="ion-ios-analytics-outline"></i>Looking4Group</a>
                 </div>
                 <div class="navbar-collapse collapse" id="bs-navbar">
                     <ul class="nav navbar-nav">
@@ -51,12 +53,12 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
+                       <!-- <li>
                             <a class="page-scroll" href="http://looking4group.de/quelthalas/portal/?page_id=27">Sign Up (German)</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="http://looking4group.eu/quelthalas/forum/">Forums (German)</a>
-                        </li>
+                        </li>-->
                         <li>
                             <i onclick="sound()" class="fa fa-volume-off fa-2x" id="sound"> </i> &nbsp;                         
                         </li>
@@ -69,7 +71,7 @@
         <header id="first">
             <div class="header-content">
                 <div class="inner">
-                    <h1 class="L4G-Big-Text">Looking 4 Group</h1>
+                    <h1 class="L4G-Big-Text">Looking4Group</h1>
                     <h4>The Burning Crusade, as it's meant to be.</h4>
                     <div class="social">
                         <ul class="social">
@@ -79,7 +81,7 @@
                     </div>
                     <hr>
                     <a href="http://looking4group.eu/hellfire/portal.php" class="btn btn-primary btn-xl page-scroll">Hellfire Progressive 2.0</a> &nbsp; 
-                    <a href="http://looking4group.de/quelthalas/portal/" class="btn btn-primary btn-xl page-scroll">Quel'Thanas DE 2.4.3</a>
+                    <!-- <a href="http://looking4group.de/quelthalas/portal/" class="btn btn-primary btn-xl page-scroll">Quel'Thanas DE 2.4.3</a> -->
                 </div>
             </div>
             <video autoplay="" muted loop="" class="fillWidth fadeIn wow collapse in" id="video-background">
