@@ -538,16 +538,6 @@ img::-moz-selection {
     background: 0 0;
 }
 
-.navbar-nav>li>i {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    cursor:pointer;
-}
-
-.navbar-nav>li>i:hover {
-    color: orange;
-}
-
 .social-sm li a {
     width: 30px;
     height: 30px;
@@ -604,4 +594,26 @@ img::-moz-selection {
 .social li.in a:hover {
   background: url(../img/tw.svg) 50% no-repeat;
   background-size: 100%;
+}
+
+.fa-stack {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor:pointer;
+}
+
+.fa-stack:hover {
+    color: orange;
+}
+
+.fa-stack > .fa-nudge-left{
+	left:auto;
+	right: 12%;
+}
+
+.fa-stack > .fa-right{
+	position:absolute;
+	line-height:inherit;
+	right:0;
+	font-size:1.5em
 }

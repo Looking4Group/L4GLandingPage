@@ -22,11 +22,13 @@
     function sound() {
        if (document.getElementById('video-background').muted == false) {
            document.getElementById('video-background').muted = true;
-           document.getElementById("sound").className = "fa fa-volume-off fa-2x";
+           document.getElementById("sound").className = "fa fa-volume-off fa-stack-2x fa-nudge-left";
+           document.getElementById("mute").className = "fa fa-times fa-right";
        }
        else {
            document.getElementById('video-background').muted = false;
            document.getElementById("sound").className = "fa fa-volume-up fa-2x";
+           document.getElementById("mute").className = "";
        }
     }
     </script>
@@ -60,7 +62,10 @@
                             <a class="page-scroll" href="http://looking4group.eu/quelthalas/forum/">Forums (German)</a>
                         </li>-->
                         <li>
-                            <i onclick="sound()" class="fa fa-volume-off fa-2x" id="sound"> </i> &nbsp;                         
+                            <span class="fa-stack">
+                              <i onclick="sound()" class="fa fa-volume-off fa-stack-2x fa-nudge-left" id="sound"></i>
+                              <i onclick="sound()" class="fa fa-times fa-right" style="font-size:1em" id="mute"></i>
+                            </span>
                         </li>
                     </ul>
                 </div>
