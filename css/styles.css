@@ -558,7 +558,7 @@ img::-moz-selection {
 
 .social {
   position: absolute;
-  bottom: 100px;
+  bottom: 40px;
   left: 7%;
   padding: 0;
   margin: 0;
@@ -593,6 +593,12 @@ img::-moz-selection {
 .social li.in a,
 .social li.in a:hover {
   background: url(../img/tw.svg) 50% no-repeat;
+  background-size: 100%;
+}
+  
+.social li.rd a,
+.social li.rd a:hover {
+  background: url(../img/rd.svg) 50% no-repeat;
   background-size: 100%;
 }
 
