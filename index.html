@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/styles.css" />
     </head>
 
@@ -17,6 +18,15 @@
             this.currentTime = 2.4;
         }, false);
     } );
+    
+    function sound() {
+       if (document.getElementById('video-background').muted == false) {
+           document.getElementById('video-background').muted = true;
+       }
+       else {
+           document.getElementById('video-background').muted = false;
+       }
+    }
     </script>
 
     <body>
@@ -47,6 +57,9 @@
                         <li>
                             <a class="page-scroll" href="http://looking4group.eu/quelthalas/forum/">Forums (German)</a>
                         </li>
+                        <li>
+                            <i onclick="sound()" class="fa fa-volume-off fa-2x" id="sound"> </i> &nbsp;                         
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -58,6 +71,12 @@
                 <div class="inner">
                     <h1 class="L4G-Big-Text">Looking 4 Group</h1>
                     <h4>The Burning Crusade, as it's meant to be.</h4>
+                    <div class="social">
+                        <ul class="social">
+                            <li class="fb"><a target="_blank" href="https://www.facebook.com/Looking4Group-1751960458389567/"></a></li>
+                            <li class="in"><a target="_blank" href="https://twitter.com/L4Grp"></a></li>
+                        </ul>
+                    </div>
                     <hr>
                     <a href="http://looking4group.eu/hellfire/portal.php" class="btn btn-primary btn-xl page-scroll">Hellfire Progressive 2.0</a> &nbsp; 
                     <a href="http://looking4group.de/quelthalas/portal/" class="btn btn-primary btn-xl page-scroll">Quel'Thanas DE 2.4.3</a>
